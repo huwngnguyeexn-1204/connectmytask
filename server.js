@@ -11,6 +11,7 @@ const pool = new Pool({
     connectionString: process.env.DATABASE_URL,
     ssl: {
         rejectUnauthorized: false
+        }
 });
 
 // 2. Create table if it does not exist (Run only once)
