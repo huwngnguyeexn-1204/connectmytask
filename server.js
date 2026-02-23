@@ -8,7 +8,7 @@ app.use(cors());
 
 // 1. Connect to PostgreSQL
 const pool = new Pool({
-    connectionString: "process.env.DATABASE_URL",
+    connectionString: process.env.DATABASE_URL,
 });
 
 // 2. Create table if it does not exist (Run only once)
